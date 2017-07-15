@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+
+  <script>
+ // ajax("post","03.php",ss=11,function(){
+ // 	console.log(1);
+ // });
+ // 
+ //ajax(options)
+ ajax({
+ 	type:"post",
+ 	url:"03.php",
+ 	data:{pwd:"123",name:"xiaofang"},
+ 	async:"true",
+ 	success:function(data){
+       console.log(data);
+ 	},
+ 	error:function(data){
+       console.log("wrong");
+ 	}
+ });
+
+ function ajax(options){
+    options.type= options.type || "get";
+    options.url=options.url || location.herf;
+    options.data= options.data || {};
+    options.async=options.async ||"true";
+    var dataArr=[];
+    for(var k in options.data){
+       dataArr.push(k+"="+options.data["k"]);
+    }
+    var dataStr=dataArr.join("&");
+
+    var xhr=new XMLHttpRequest();
+    xhr.open(options.type,options.type=="get"?options.url+"?"+dataStr:options.url,options.async);
+        xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded")}
+        xhr.send(options.type=="get"?null:dataStr);
+    if(options.async){
+	    if(options.type=="post"){
+	        xhr.onreadystatechange=function(){
+	        if(xhr.readyState==4 && xhr.status==200){
+	       	var type=xhr.getResponseHeader("Content-Type");
+	       	var result;
+	       	  if(type.indexOf("json")!=-1){
+	            result=JSON.parse(xhr.responseText);
+	       	  }else if(type.indexOf("XML")!=-1){
+	             result=xhr.responseXML;
+	       	  }else{
+	       	     result=xhr.responseText;
+	       	  }
+	       	  options.success(result); 
+	       }
+	    }
+    }else{
+       var type= xhr.getResponseHeader("Content-Type");
+        var result;
+	       	  if(type.indexOf("json")!=-1){
+	            result=JSON.parse(xhr.responseText);
+	       	  }else if(type.indexOf("XML")!=-1){
+	             result=xhr.responseXML;
+	       	  }else{
+	       	     result=xhr.responseText;
+	       	  }
+	       	  options.success(result); 
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // xhr.open("post","url");
+    // xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+    // xhr.send("key=data");
+    // xhr.onreadystatechange=function(){
+    // 	if(xhr.readyState==4 && xhr.status==200){
+    // 	var content=xhr.responseText;
+    // 	}
+    // }
+
+    // xhr.open("get","url"+data);
+  
+    // xhr.send();
+    // xhr.onreadystatechange=function(){
+    // 	if(xhr.readyState==4 && xhr.status==200){
+    // 	var content=xhr.responseText;
+    // 	}
+    // }
+
+
+
+
+  </script>
+
+
+
+
+    </body>
+</html>
