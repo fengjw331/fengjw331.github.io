@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7911f002","path":"/guide/vue.html","title":"use vue","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"vue html","slug":"vue-html","link":"#vue-html","children":[]}],"git":{"updatedTime":1702804388000,"contributors":[{"name":"fightaa","email":"fengdeninan331@sohu.com","commits":1}]},"filePathRelative":"guide/vue.md"}');export{e as data};
