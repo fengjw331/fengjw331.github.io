@@ -1,0 +1,28 @@
+import{_ as i,r as l,o,c,a as n,e as a,w as e,b as t,d as p}from"./app-wL_NtUFy.js";const r={},d=p(`<h1 id="get-start" tabindex="-1"><a class="header-anchor" href="#get-start" aria-hidden="true">#</a> get start</h1><h2 id="ts" tabindex="-1"><a class="header-anchor" href="#ts" aria-hidden="true">#</a> ts</h2><div class="language-typescript line-numbers-mode" data-ext="ts"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> defaultTheme<span class="token punctuation">,</span> defineUserConfig <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&#39;vuepress&#39;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineUserConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token string">&#39;你好， VuePress&#39;</span><span class="token punctuation">,</span>
+
+  theme<span class="token operator">:</span> <span class="token function">defaultTheme</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    logo<span class="token operator">:</span> <span class="token string">&#39;https://vuejs.org/images/logo.png&#39;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><div class="highlight-lines"><div class="highlight-line"> </div><br><br><br><br><div class="highlight-line"> </div><div class="highlight-line"> </div><div class="highlight-line"> </div><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="md" tabindex="-1"><a class="header-anchor" href="#md" aria-hidden="true">#</a> md</h2><div class="language-markdown line-numbers-mode" data-ext="md"><pre class="language-markdown"><code><span class="token comment">&lt;!-- 默认情况下，这里会被保持原样 --&gt;</span>
+1 + 2 + 3 = {{ 1 + 2 + 3 }}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-markdown line-numbers-mode" data-ext="md"><pre class="language-markdown"><code><span class="token comment">&lt;!-- 这里会被 Vue 编译 --&gt;</span>
+1 + 2 + 3 = 6
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token comment">// 由于 JS 代码高亮，这里不会被正确编译</span>
+<span class="token keyword">const</span> onePlusTwoPlusThree <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">3</span> <span class="token punctuation">}</span><span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="code" tabindex="-1"><a class="header-anchor" href="#code" aria-hidden="true">#</a> code</h2><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code>
+
+<span class="token keyword">const</span> obj<span class="token operator">=</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">email</span><span class="token operator">:</span> <span class="token string">&quot;john@gmail.com&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token string">&quot;123456&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// interface User{</span>
+<span class="token comment">//     name: string;</span>
+<span class="token comment">//     email: string;</span>
+<span class="token comment">//     password: string;</span>
+<span class="token comment">// }</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,9),u={class:"table-of-contents"};function v(m,k){const s=l("router-link");return o(),c("div",null,[d,n("nav",u,[n("ul",null,[n("li",null,[a(s,{to:"#ts"},{default:e(()=>[t("ts")]),_:1})]),n("li",null,[a(s,{to:"#md"},{default:e(()=>[t("md")]),_:1})]),n("li",null,[a(s,{to:"#code"},{default:e(()=>[t("code")]),_:1})])])])])}const g=i(r,[["render",v],["__file","getstart.html.vue"]]);export{g as default};
